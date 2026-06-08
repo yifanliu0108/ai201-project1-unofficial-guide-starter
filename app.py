@@ -1,11 +1,11 @@
-"""Query interface — Milestone 5.
+"""Query interface - Milestone 5.
 
 A Gradio chat UI over the RAG pipeline. Run with:
 
     python app.py
 
-Then open the printed local URL. Ask espresso questions; the assistant answers
-only from the indexed community documents and cites its sources.
+Then open the printed local URL. Ask UCSD data science course-planning questions; the
+assistant answers only from the indexed community documents and cites its sources.
 """
 
 import gradio as gr
@@ -14,20 +14,20 @@ from rag import answer
 
 
 EXAMPLES = [
-    "My espresso shot pulls really fast and tastes sour. What should I change?",
-    "What dose and ratio should I use for a double shot on a Breville Bambino?",
-    "How do I fix channeling in my espresso puck?",
-    "What brew temperature should I target on a Gaggia Classic without a PID?",
+    "How should I plan the UCSD DSC lower-division sequence?",
+    "Is DSC 30 a heavy class, and how should I handle it?",
+    "What should I know before taking DSC 80?",
+    "How should I prepare for DSC 140A?",
 ]
 
 
 def respond(message: str, history):
     """Gradio ChatInterface callback: return the grounded answer with sources."""
     if not message.strip():
-        return "Ask me a home-espresso question and I'll answer from my sources."
+        return "Ask me about UCSD data science courses and I'll answer from the indexed sources."
     result = answer(message)
     text = result["answer"]
-    if result["sources"] and "don't have information" not in text:
+    if result["sources"] and "don't have enough information" not in text:
         # Show which documents were retrieved, for transparency.
         retrieved = ", ".join(result["sources"])
         text += f"\n\n_Retrieved from: {retrieved}_"
@@ -36,11 +36,12 @@ def respond(message: str, history):
 
 demo = gr.ChatInterface(
     fn=respond,
-    title="☕ The Unofficial Guide — Home Espresso",
+    title="The Unofficial Guide - UCSD Data Science",
     description=(
-        "A retrieval-augmented assistant grounded in community espresso knowledge "
-        "(r/espresso, Home-Barista). It answers only from its indexed documents and "
-        "cites them. Run `python ingest.py` first to build the index."
+        "A retrieval-augmented assistant grounded in UCSD data science course pages, "
+        "student planning notes, and r/UCSD-style advice. It answers only from its "
+        "indexed documents and cites them. Run `python ingest.py` first to build the "
+        "index."
     ),
     examples=EXAMPLES,
 )

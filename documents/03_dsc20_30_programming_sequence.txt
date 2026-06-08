@@ -1,0 +1,21 @@
+Source: UCSD DSC course listings and r/UCSD discussions of DSC 20/30 workload
+Representative URLs: https://courses.ucsd.edu/courselist.aspx?name=DSC and https://www.reddit.com/r/UCSD/
+Collected as: documents/03_dsc20_30_programming_sequence.txt
+
+=== DSC 20 and DSC 30 - Programming and Data Structures for Data Science ===
+
+DSC 20 and DSC 30 are where the major starts feeling technical. DSC 20 focuses on
+programming fundamentals for data science, while DSC 30 moves into data structures and
+algorithms. Student advice consistently says not to overload the quarter you take DSC 30
+unless you already have strong programming habits.
+
+The main difficulty is not one huge exam; it is the weekly rhythm of programming work.
+Students who start assignments early can debug gradually. Students who wait until the
+weekend often lose time to small bugs, hidden cases, or misunderstanding the required
+algorithm.
+
+Unofficial planning advice: take DSC 20 seriously even if you already know some Python,
+because DSC 30 expects you to reason about code structure, runtime, recursion, and data
+structures. If DSC 30 feels hard, that is normal; many UCSD DSC students describe it as
+one of the first courses that exposes weak debugging and algorithm habits.
+

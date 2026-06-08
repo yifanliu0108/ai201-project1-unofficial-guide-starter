@@ -1,0 +1,22 @@
+Source: UC San Diego General Catalog - Data Science, B.S.
+URL: https://catalog.ucsd.edu/curric/DSC-ug.html
+Collected as: documents/01_ucsd_dsc_major_catalog.txt
+
+=== UCSD Data Science B.S. - Major Structure ===
+
+The official catalog says the data science major is selective/capped and has a large
+lower-division sequence before students reach the upper-division DSC courses. Students
+should expect lower-division work in programming, data structures, theory foundations,
+calculus, linear algebra, and subject-domain courses.
+
+Student planning note: do not treat DSC as "just Python." The major builds through a
+sequence: DSC 10 introduces the field, DSC 20 and DSC 30 build programming and data
+structures, DSC 40A and DSC 40B give math/theory foundations, and DSC 80 becomes the
+first big practice-and-application class. Skipping around the sequence usually makes
+later upper-division courses harder because the prerequisites are cumulative.
+
+The catalog also warns that students must satisfy prerequisites for all courses. In
+practice, this means a four-year or transfer plan should be built backward from DSC 80,
+DSC 100, DSC 102, DSC 106, DSC 140A, and the capstone sequence rather than only from GE
+requirements.
+

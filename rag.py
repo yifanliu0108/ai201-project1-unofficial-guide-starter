@@ -1,4 +1,4 @@
-"""Retrieval + Grounded Generation — Stages 4, 5 of the pipeline.
+"""Retrieval + Grounded Generation - Stages 4, 5 of the pipeline.
 
 `retrieve()` embeds the user query and pulls the top-k most similar chunks from
 ChromaDB. `generate()` feeds those chunks to a Groq-hosted LLM under a strict
@@ -17,27 +17,31 @@ from ingest import CHROMA_DIR, COLLECTION_NAME, get_embedding_function
 
 load_dotenv()
 
-TOP_K = 4
+TOP_K = 3
 # Chroma cosine distance; chunks less similar than this are treated as irrelevant
 # and dropped, so off-topic queries retrieve little/nothing and the model declines.
-MAX_DISTANCE = 0.9
+MAX_DISTANCE = 0.55
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 
-SYSTEM_PROMPT = """You are "The Unofficial Guide" — a home-espresso assistant for \
-beginners using entry-level machines (Breville Bambino, Gaggia Classic, etc.).
+SYSTEM_PROMPT = """You are "The Unofficial Guide" - an assistant that answers \
+questions for UC San Diego data science students using UCSD course documents, \
+student planning notes, and r/UCSD-style advice.
 
 You must answer ONLY using the numbered CONTEXT passages provided in the user \
-message. These passages are community knowledge retrieved for this question.
+message. These passages are student-generated knowledge retrieved for this question.
 
 Rules:
 - Base every claim on the CONTEXT. Do not use outside knowledge or invent facts, \
-numbers, model names, or steps that are not in the CONTEXT.
+course numbers, prerequisites, policies, instructors, or requirements that are not in \
+the CONTEXT.
 - If the CONTEXT does not contain enough information to answer, say plainly: \
-"I don't have information about that in my sources." Do not guess.
-- Be specific and practical: give the actual numbers, steps, and reasoning from \
-the passages (e.g., grind finer, 18 g in / 36 g out, wait for the light).
+"I don't have enough information on that in my sources." Do not guess.
+- Be specific: give the actual UCSD DSC details in the passages (e.g., "DSC 30", \
+"DSC 80", "EASy request", "DSC 140A", "R/dataframe/notebook/project work").
+- Attribute carefully: if a detail is about a specific course, prerequisite, or \
+enrollment process, name it and do not mix up DSC, CSE, math, or GE advice.
 - Cite the source file(s) you used at the end of your answer, like: \
-"Sources: 02_grind_taste_troubleshooting.md".
+"Sources: 05_dsc80_practice_application.txt".
 - Keep answers concise and directly responsive to the question."""
 
 
@@ -88,7 +92,7 @@ def _build_context(chunks: list[dict]) -> str:
 def generate(query: str, chunks: list[dict]) -> str:
     """Call the Groq LLM with the grounded system prompt and retrieved context."""
     if not chunks:
-        return "I don't have information about that in my sources."
+        return "I don't have enough information on that in my sources."
 
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key or api_key == "your_key_here":
@@ -116,18 +120,35 @@ def generate(query: str, chunks: list[dict]) -> str:
     return completion.choices[0].message.content.strip()
 
 
+def _replace_source_line(response: str, sources: list[str]) -> str:
+    """Make source attribution deterministic instead of trusting LLM formatting."""
+    if not sources or "don't have enough information" in response.lower():
+        return response.strip()
+
+    lines = response.strip().splitlines()
+    kept = []
+    for line in lines:
+        if line.strip().lower().startswith("sources:"):
+            break
+        kept.append(line)
+
+    body = "\n".join(kept).rstrip()
+    return f"{body}\n\nSources: {', '.join(sources)}"
+
+
 def answer(query: str, k: int = TOP_K) -> dict:
     """Full pipeline: retrieve then generate. Returns answer text + retrieved chunks."""
     chunks = retrieve(query, k=k)
     response = generate(query, chunks)
     sources = sorted({c["source"] for c in chunks})
+    response = _replace_source_line(response, sources)
     return {"answer": response, "chunks": chunks, "sources": sources}
 
 
 if __name__ == "__main__":
     import sys
 
-    q = " ".join(sys.argv[1:]) or "My shot pulls fast and tastes sour. What do I do?"
+    q = " ".join(sys.argv[1:]) or "How should I plan the UCSD DSC lower-division sequence?"
     result = answer(q)
     print(f"Q: {q}\n")
     print(result["answer"])

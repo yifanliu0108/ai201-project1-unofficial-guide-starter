@@ -1,4 +1,4 @@
-"""Evaluation harness — runs the 5 planning.md test questions through the system.
+"""Evaluation harness - runs the 5 planning.md test questions through the system.
 
     python evaluate.py
 
@@ -11,14 +11,14 @@ out-of-corpus question to check that grounding makes the system decline.
 from rag import answer, retrieve
 
 TEST_QUESTIONS = [
-    "My espresso shot pulls really fast and tastes sour. What should I change?",
-    "What dose and ratio should I use for a double shot on a Breville Bambino?",
-    "The steam on my older Gaggia Classic is weak and bubbly. How do I get better microfoam?",
-    "My shots spray everywhere and taste both harsh and sour. How do I fix channeling?",
-    "What brew water temperature should I target, and how do I hit it on a Gaggia Classic without a PID?",
+    "How should I plan the UCSD DSC lower-division sequence?",
+    "Is DSC 30 a heavy class, and how should I handle it?",
+    "What should I know before taking DSC 80?",
+    "Can I assume an EASy request will let me take DSC 100 while still finishing a prerequisite?",
+    "How should I prepare for DSC 140A?",
 ]
 
-OUT_OF_CORPUS = "What's the best grinder burr size for a Niche Zero, and how do I season it?"
+OUT_OF_CORPUS = "Which UCSD dining hall has the best late-night food?"
 
 
 def run():
@@ -26,7 +26,7 @@ def run():
         print("=" * 80)
         print(f"Q{i}: {q}")
         hits = retrieve(q)
-        srcs = ", ".join(f"{h['source']} (d={h['distance']:.3f})" for h in hits)
+        srcs = ", ".join(f"{h['source']} (d={h['distance']:.3f})" for h in hits) or "(none)"
         print(f"Retrieved: {srcs}")
         print("-" * 80)
         print(answer(q)["answer"])

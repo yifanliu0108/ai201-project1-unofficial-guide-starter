@@ -1,0 +1,19 @@
+Source: UCSD DSC course listings and r/UCSD data science major discussions
+Representative URLs: https://courses.ucsd.edu/courselist.aspx?name=DSC and https://www.reddit.com/r/UCSD/comments/13jg16t
+Collected as: documents/09_dsc140a_ml_foundations.txt
+
+=== DSC 140A - Probabilistic Modeling and Machine Learning ===
+
+DSC 140A is one of the machine-learning foundation courses in the UCSD data science
+major. Students generally expect it to require more math maturity than the applied
+notebook courses. Probability, linear algebra, and comfort with model assumptions matter.
+
+Unofficial advice: review probability and linear algebra before the quarter starts,
+especially if DSC 40A/40B felt shaky. The hard part is often not calling a library; it is
+understanding what the model is assuming, what objective is being optimized, and how to
+interpret errors or probabilities.
+
+Planning note: if you want machine learning, computer vision, NLP, or deep learning
+electives later, DSC 140A should be treated as foundation rather than a box to check.
+Pairing it with another mathematically heavy class can make the quarter rough.
+

@@ -1,0 +1,18 @@
+Source: UCSD DSC course listings and student planning notes for DSC 40A/40B
+Representative URL: https://courses.ucsd.edu/courselist.aspx?name=DSC
+Collected as: documents/04_dsc40a_40b_theory_foundations.txt
+
+=== DSC 40A and DSC 40B - Theory Foundations ===
+
+DSC 40A and DSC 40B are the theory foundation courses for data science. Students usually
+describe them as more math/proof oriented than DSC 10 or DSC 20. The useful mindset is
+to practice definitions and derivations early instead of waiting until the exam review.
+
+DSC 40A is commonly treated as the bridge from computation into probability, modeling,
+and mathematical reasoning. DSC 40B continues that foundation and becomes important for
+later courses that ask why an algorithm or model works rather than only how to run it.
+
+Unofficial advice: do not pair DSC 40B with too many other proof-heavy or project-heavy
+classes if you can avoid it. Students who are comfortable with calculus and linear
+algebra have an easier time, but the course still requires steady problem practice.
+

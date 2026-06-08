@@ -1,0 +1,20 @@
+Source: UCSD DSC course listings and student advice about systems/scalable analytics
+Representative URL: https://courses.ucsd.edu/courselist.aspx?name=DSC
+Collected as: documents/07_dsc102_scalable_analytics.txt
+
+=== DSC 102 - Systems for Scalable Analytics ===
+
+DSC 102 is the class students associate with systems thinking for data science: how data
+workflows scale, how tools process larger data, and why performance matters when datasets
+outgrow a simple notebook.
+
+Unofficial advice: do not take DSC 102 as if it is just another pandas class. The course
+is easier if you are comfortable with programming, data management ideas from DSC 100,
+and the habit of tracing where time and memory go. Students who only practiced small
+toy examples often need extra time to understand why scalable systems have different
+tradeoffs.
+
+Schedule pairing note: avoid stacking DSC 102 with multiple heavy project courses unless
+you have a lighter GE or writing class in the same quarter. It rewards consistent work
+because systems assignments can become frustrating when left until the deadline.
+

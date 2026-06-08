@@ -1,0 +1,20 @@
+Source: DSC 80 public course site and r/UCSD DSC 80 discussions
+URLs: https://dsc80.com/ and https://www.reddit.com/r/UCSD/comments/f4o02t
+Collected as: documents/05_dsc80_practice_application.txt
+
+=== DSC 80 - Practice and Application of Data Science ===
+
+DSC 80 is a major checkpoint course. The public course site frames it as practice and
+application of data science, and students often describe it as the class where earlier
+Python, pandas, cleaning, visualization, and reasoning skills come together.
+
+Unofficial advice: expect projects and assignments to take real time. Older r/UCSD
+threads warned that DSC 80 can feel like the continuation of DSC 30, except with more
+data analysis in Python. Students who are shaky on dataframe operations, debugging, or
+writing clear explanations should review before the quarter starts.
+
+The course matters beyond its own grade because many later DSC upper divisions assume
+you can clean data, work in notebooks, reason about messy datasets, and communicate
+results. If you want one course to be organized and well-supported in your schedule, make
+it DSC 80.
+
