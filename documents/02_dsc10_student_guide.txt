@@ -1,20 +1,21 @@
-Source: UCSD DSC 10 course listings and r/UCSD student advice threads about starting data science
+Source card: UCSD DSC 10 course listing and r/UCSD student advice threads about starting data science
 Representative URLs: https://courses.ucsd.edu/courselist.aspx?name=DSC and https://www.reddit.com/r/UCSD/
 Collected as: documents/02_dsc10_student_guide.txt
 
-=== DSC 10 - Principles of Data Science ===
+=== DSC 10 - My Starting-Class Notes ===
 
-DSC 10 is the on-ramp for UCSD data science students. Students describe it as the class
-where you learn the workflow of asking a question, cleaning data, using Python notebooks,
-making basic visualizations, and explaining results in words. It is friendlier than the
-later programming sequence, but it still rewards steady practice.
+Why I saved this: DSC 10 is the first DSC class many students use to decide whether the
+major fits them. It is also the class people underestimate because it starts friendly.
 
-Unofficial advice: treat labs and projects as skill-building, not busywork. Students who
-only copy notebook patterns can pass early assignments but struggle once prompts become
-less guided. Build the habit of reading error messages, checking dataframe shapes, and
-writing short explanations of what each transformation does.
+Official course-listing idea: DSC 10 introduces data exploration, statistical inference,
+prediction, Python for tabular data, visualization, simulation, homework, and projects
+with real-world datasets.
 
-For a data science major, DSC 10 is most useful if you leave with comfort in Jupyter,
-pandas-style tabular thinking, and the idea that analysis is a process. It is not the
-hardest course in the major; it is the setup for DSC 20, DSC 30, and DSC 80.
+Student-note version: do not treat labs as copy/paste notebook chores. The useful habits
+are reading error messages, checking dataframe shapes, naming variables clearly, and
+writing one or two sentences about what a transformation changed. Those habits matter
+again in DSC 80.
 
+My takeaway: DSC 10 is not the hardest class in the major, but it is where the notebook
+workflow starts. If I leave DSC 10 shaky on Jupyter and tabular data, DSC 20/30/80 will
+feel worse than they need to.

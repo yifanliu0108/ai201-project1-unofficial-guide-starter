@@ -122,9 +122,6 @@ def generate(query: str, chunks: list[dict]) -> str:
 
 def _replace_source_line(response: str, sources: list[str]) -> str:
     """Make source attribution deterministic instead of trusting LLM formatting."""
-    if not sources or "don't have enough information" in response.lower():
-        return response.strip()
-
     lines = response.strip().splitlines()
     kept = []
     for line in lines:
@@ -133,6 +130,9 @@ def _replace_source_line(response: str, sources: list[str]) -> str:
         kept.append(line)
 
     body = "\n".join(kept).rstrip()
+    if not sources or "don't have enough information" in body.lower():
+        return body
+
     return f"{body}\n\nSources: {', '.join(sources)}"
 
 

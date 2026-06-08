@@ -1,20 +1,19 @@
-Source: r/UCSD threads on DSC enrollment, second pass, and EASy requests
+Source card: r/UCSD threads on DSC enrollment, second pass, and EASy requests
 Representative URLs: https://www.reddit.com/r/UCSD/comments/uy12vx and https://www.reddit.com/r/UCSD/comments/uz66gf
 Collected as: documents/11_enrollment_and_easypass_advice.txt
 
-=== Enrollment, Second Pass, and EASy Requests for DSC Classes ===
+=== Enrollment, Second Pass, and EASy Notes ===
 
-Student enrollment advice for UCSD DSC classes is practical: know which courses fill,
-which ones majors can usually second pass, and which ones require permission if you are
-not in the major. Older r/UCSD discussions say DSC majors often have enough priority for
-some core DSC classes, but that does not mean every quarter is safe.
+Why I saved this: enrollment advice is the part that official four-year plans do not
+fully capture. A perfect plan on paper can fail if one bottleneck class gets delayed.
 
-Unofficial advice: first pass classes that are bottlenecks for your plan, prerequisites
-for multiple later courses, or hard to replace. If a class is required before several
-upper divisions, a delay can push back your whole schedule. Do not rely on an EASy request
-for a prerequisite exception unless an advisor or department confirms it.
+Student rule of thumb: first pass classes that are bottlenecks, prerequisites for
+multiple later courses, or hard to replace. A class that unlocks three later courses is
+more urgent than a class that can be taken almost any quarter.
 
-For transfer students, check petitions early. A course from another UC or community
-college may look similar to DSC 80 or another UCSD requirement, but equivalency is not
-automatic. Ask before enrolling if your plan depends on the course counting.
+EASy note: do not rely on an EASy request for a prerequisite exception unless an advisor
+or department confirms it. Asking is fine; building the whole schedule around approval is
+the risky part.
 
+Transfer note: check petitions early. A course from another UC or community college may
+look similar to a UCSD requirement, but equivalency is not automatic.

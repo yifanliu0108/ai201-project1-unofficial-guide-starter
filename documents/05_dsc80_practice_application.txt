@@ -1,20 +1,20 @@
-Source: DSC 80 public course site and r/UCSD DSC 80 discussions
+Source card: DSC 80 public course site and r/UCSD DSC 80 discussions
 URLs: https://dsc80.com/ and https://www.reddit.com/r/UCSD/comments/f4o02t
 Collected as: documents/05_dsc80_practice_application.txt
 
-=== DSC 80 - Practice and Application of Data Science ===
+=== DSC 80 - Practice/Application Checkpoint Notes ===
 
-DSC 80 is a major checkpoint course. The public course site frames it as practice and
-application of data science, and students often describe it as the class where earlier
-Python, pandas, cleaning, visualization, and reasoning skills come together.
+Why I saved this: DSC 80 is one of the classes I would plan around, not squeeze in as
+an afterthought. It is the bridge from lower-division setup into upper-division work.
 
-Unofficial advice: expect projects and assignments to take real time. Older r/UCSD
-threads warned that DSC 80 can feel like the continuation of DSC 30, except with more
-data analysis in Python. Students who are shaky on dataframe operations, debugging, or
-writing clear explanations should review before the quarter starts.
+Official/course-site idea: DSC 80 is practice and application. It pulls together the
+data science lifecycle, algorithms, statistics, visualization, machine learning ideas,
+and data systems at a practical level.
 
-The course matters beyond its own grade because many later DSC upper divisions assume
-you can clean data, work in notebooks, reason about messy datasets, and communicate
-results. If you want one course to be organized and well-supported in your schedule, make
-it DSC 80.
+Student thread note: people talk about DSC 80 like the continuation of DSC 30, but with
+more data analysis in Python. That means dataframe operations, debugging, and clear
+written explanations all matter.
 
+My takeaway: review pandas/dataframe work before the quarter starts. DSC 80 matters past
+the grade because later DSC classes assume I can clean data, work in notebooks, reason
+about messy datasets, and communicate results.

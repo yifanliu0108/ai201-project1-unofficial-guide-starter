@@ -1,21 +1,20 @@
-Source: r/UCSD data science program discussions and UCSD course listings
+Source card: r/UCSD data science program discussions and UCSD course listings
 Representative URLs: https://www.reddit.com/r/UCSD/comments/139itxe/data_science/ and https://courses.ucsd.edu/courselist.aspx?name=DSC
 Collected as: documents/10_cse_151a_and_dsc_electives.txt
 
-=== CSE 151A, DSC Electives, and Choosing a Technical Direction ===
+=== CSE 151A, DSC Electives, and Technical Direction Notes ===
 
-UCSD data science students often compare DSC machine-learning classes with CSE electives.
-Student discussions say the major can feel broad, so your elective choices matter a lot.
-If you want a more technical path, choose electives that build depth instead of only
-checking easy requirements.
+Why I saved this: the DSC major is broad enough that two students can graduate with very
+different strengths. Elective choices matter.
 
-Unofficial advice: CSE 151A is commonly viewed as a strong machine-learning option when
-available to you, while DSC electives vary by topic and instructor. Students interested
-in ML should plan early because prerequisites and seat availability can shape what is
-realistic.
+Student discussion theme: CSE 151A is often mentioned as a strong ML option when it is
+available, while DSC electives vary by topic and instructor. Seat availability and
+prerequisites can make "I'll just take the ML elective later" less reliable than it
+sounds.
 
-Do not assume the major alone guarantees a deep ML portfolio. Combine the required DSC
-sequence with projects, research, internships, or electives in databases, systems,
-visualization, ML, or domain applications depending on what kind of data science work you
-want to do.
+Planning note: the major alone does not automatically create a deep ML portfolio. The
+portfolio comes from projects, research, internships, or a coherent elective path in ML,
+databases, systems, visualization, or a domain application.
 
+My takeaway: pick a direction early enough that upper-division electives reinforce each
+other instead of feeling like random requirement-filling.

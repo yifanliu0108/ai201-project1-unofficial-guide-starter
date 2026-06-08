@@ -1,19 +1,18 @@
-Source: UCSD DSC course listings and student notes on DSC 106 / data visualization
+Source card: UCSD DSC course listings and student notes on DSC 106 / data visualization
 Representative URL: https://courses.ucsd.edu/courselist.aspx?name=DSC
 Collected as: documents/08_dsc106_visualization.txt
 
-=== DSC 106 - Introduction to Data Visualization ===
+=== DSC 106 - Visualization Notes ===
 
-DSC 106 is the visualization course. Students usually value it because it connects
-technical analysis to communication: choosing encodings, designing charts, and explaining
-what a viewer should learn from a dataset.
+Why I saved this: visualization is one of the DSC classes that can turn into portfolio
+evidence if I save the work instead of treating it as a one-quarter assignment.
 
-Unofficial advice: the course is not just "make a pretty graph." Strong work usually
-requires a clear question, appropriate chart type, readable labels, and a justification
-for design choices. Students who enjoy portfolios should save their best projects
-because visualization work can become a useful artifact for internships.
+Course note: DSC 106 is about communicating analysis. The hard part is not just making a
+chart; it is choosing an encoding, making labels readable, and explaining what the viewer
+should take away.
 
-Planning note: DSC 106 pairs well with a more technical class because the workload feels
-different from algorithm or systems work. It can still take time near project deadlines,
-so do not treat it as a no-work elective.
+Student advice: save strong projects. A clean visualization project is easier to show in
+an internship portfolio than a messy notebook with no explanation.
 
+My takeaway: DSC 106 can pair well with a more technical class because the work feels
+different from algorithms/systems, but project deadlines can still take time.

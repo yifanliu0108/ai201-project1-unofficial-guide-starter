@@ -1,20 +1,21 @@
-Source: Student-maintained UCSD data science planning notes synthesized from catalog, course listings, and r/UCSD advice
+Source card: My UCSD data science planning notes compiled from the catalog, course listings, and r/UCSD advice
 Representative URLs: https://catalog.ucsd.edu/curric/DSC-ug.html, https://courses.ucsd.edu/courselist.aspx?name=DSC, https://www.reddit.com/r/UCSD/
 Collected as: documents/12_ucsd_dsc_four_year_strategy.txt
 
-=== UCSD Data Science Four-Year / Transfer Planning Strategy ===
+=== UCSD Data Science Four-Year / Transfer Planning Notes ===
 
-The safest UCSD data science plan is built around prerequisites. Finish DSC 10, DSC 20,
-DSC 30, DSC 40A, DSC 40B, and DSC 80 on time because they unlock the upper-division
-core. A delay in one lower-division course can cascade into DSC 100, DSC 102, DSC 106,
-DSC 140A, or capstone timing.
+Why I saved this: this is the "what I would tell a newer DSC student" page. It combines
+the official sequence with the practical scheduling warnings.
 
-Workload pairing matters. Avoid taking too many heavy programming, theory, or project
-courses in the same quarter. A balanced quarter might pair one demanding DSC course with
-a GE, writing course, or lighter elective. A rough quarter would stack DSC 30, DSC 40B,
-and another technical project class without enough debugging/study time.
+Main rule: build the plan around prerequisites. Finish DSC 10, DSC 20, DSC 30, DSC 40A,
+DSC 40B, and DSC 80 on time because they unlock the upper-division core. A delay in one
+lower-division class can cascade into DSC 100, DSC 102, DSC 106, DSC 140A, or capstone.
 
-Career planning note: the major gives breadth, but internships and projects reward
-evidence. Save strong notebooks, visualization projects, database/systems work, and ML
-projects. If you are interested in research, start talking to faculty, tutors, or labs
-before senior year rather than waiting for capstone.
+Workload rule: do not stack too many heavy programming, theory, or project courses in
+one quarter. A balanced quarter might pair one demanding DSC course with a GE, writing
+course, or lighter elective. A rough quarter would stack DSC 30, DSC 40B, and another
+technical project class with no real debugging time.
+
+Career note: save evidence as you go: notebooks, visualization projects, systems/database
+work, and ML projects. If research is the goal, start talking to faculty, tutors, or labs
+before senior year instead of waiting for capstone.
