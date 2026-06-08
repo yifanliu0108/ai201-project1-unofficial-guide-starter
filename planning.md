@@ -16,7 +16,7 @@ sites, r/UCSD threads, and peer planning notes.
 ## Documents
 
 The corpus has 12 local text documents. I wrote them as short source cards instead of
-full scraped pages. Each card names the source type, representative URL(s), and local
+full scraped pages. Each card names the source type, source URL(s) checked, and local
 file path, then records the planning takeaway I wanted the RAG system to know.
 
 | # | File | Specific source |
