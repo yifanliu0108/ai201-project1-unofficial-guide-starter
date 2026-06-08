@@ -1,5 +1,5 @@
 Source card: UCSD DSC 10 course listing and r/UCSD student advice threads about starting data science
-Representative URLs: https://courses.ucsd.edu/courselist.aspx?name=DSC and https://www.reddit.com/r/UCSD/
+Source URLs checked: https://courses.ucsd.edu/courselist.aspx?name=DSC and https://www.reddit.com/r/UCSD/
 Collected as: documents/02_dsc10_student_guide.txt
 
 === DSC 10 - My Starting-Class Notes ===

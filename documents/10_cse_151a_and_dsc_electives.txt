@@ -1,5 +1,5 @@
 Source card: r/UCSD data science program discussions and UCSD course listings
-Representative URLs: https://www.reddit.com/r/UCSD/comments/139itxe/data_science/ and https://courses.ucsd.edu/courselist.aspx?name=DSC
+Source URLs checked: https://www.reddit.com/r/UCSD/comments/139itxe/data_science/ and https://courses.ucsd.edu/courselist.aspx?name=DSC
 Collected as: documents/10_cse_151a_and_dsc_electives.txt
 
 === CSE 151A, DSC Electives, and Technical Direction Notes ===

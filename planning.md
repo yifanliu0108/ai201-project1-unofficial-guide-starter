@@ -154,24 +154,24 @@ documents/*.txt
 
 Milestone 3 - ingestion and chunking:
 
-I will use AI assistance for the pipeline scaffolding, not for choosing the domain. I
-will provide the UCSD document list and chunking strategy, then ask it to implement
-file ingestion and sentence-aware chunking with source metadata. I will check chunk
-counts and sample chunks myself, especially whether course names stay near their
+I planned to use Codex for the pipeline scaffolding, not for choosing the domain. I
+would provide the UCSD document list and chunking strategy, then ask for file
+ingestion and sentence-aware chunking with source metadata. My check would be the
+chunk counts and sample chunks, especially whether course names stayed near their
 advice.
 
 Milestone 4 - retrieval:
 
-I will give the AI tool the retrieval approach (`all-MiniLM-L6-v2`, ChromaDB, top-k=3,
+I planned to provide the retrieval approach (`all-MiniLM-L6-v2`, ChromaDB, top-k=3,
 distance threshold 0.55) and ask for a `retrieve()` function returning text, source,
-and distance. I will run the five evaluation questions before generation and check
-which DSC source appears, because retrieval errors are easier to see before the LLM
+and distance. I would run the five evaluation questions before generation and check
+which DSC source appeared, because retrieval errors are easier to see before the LLM
 smooths them over.
 
 Milestone 5 - generation, UI, and evaluation:
 
-I will give the AI tool the grounded-generation requirements from the rubric and ask
-for `generate()`, `answer()`, `app.py`, and `evaluate.py`. I will review outputs
-against the expected answers, add deterministic source-line replacement if citations
-are inconsistent, and keep at least one honest failure case instead of tuning the
-examples until everything looks perfect.
+I planned to use the grounded-generation requirements from the rubric to build
+`generate()`, `answer()`, `app.py`, and `evaluate.py`. My review step would compare
+outputs against the expected answers, add deterministic source-line replacement if
+citations were inconsistent, and keep at least one honest failure case instead of
+tuning the examples until everything looked perfect.

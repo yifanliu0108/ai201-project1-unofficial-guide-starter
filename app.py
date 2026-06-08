@@ -39,7 +39,7 @@ demo = gr.ChatInterface(
     title="The Unofficial Guide - UCSD Data Science",
     description=(
         "A retrieval-augmented assistant grounded in UCSD data science course pages, "
-        "student planning notes, and r/UCSD-style advice. It answers only from its "
+        "student planning notes, and r/UCSD discussion notes. It answers only from its "
         "indexed documents and cites them. Run `python ingest.py` first to build the "
         "index."
     ),

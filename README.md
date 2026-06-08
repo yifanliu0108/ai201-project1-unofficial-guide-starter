@@ -143,7 +143,7 @@ Top returned chunks:
 
 - `12_ucsd_dsc_four_year_strategy.txt` (distance 0.352) - finish DSC 10, 20, 30,
   40A, 40B, and 80 because they unlock upper division.
-- `03_dsc20_30_programming_sequence.txt` (distance 0.397) - DSC 20/30 are the
+- `03_dsc20_30_programming_sequence.txt` (distance 0.390) - DSC 20/30 are the
   programming and data-structures base.
 - `01_ucsd_dsc_major_catalog.txt` (distance 0.397) - official major structure and
   lower-division requirements.
@@ -159,10 +159,10 @@ Top returned chunks:
 
 - `06_dsc100_data_management.txt` (distance 0.326) - do not assume a DSC 100
   prerequisite exception will be approved.
-- `06_dsc100_data_management.txt` (distance 0.388) - ask the department before
+- `06_dsc100_data_management.txt` (distance 0.389) - ask the department before
   building a schedule around an exception.
-- `04_dsc40a_40b_theory_foundations.txt` (distance 0.457) - explains the DSC 40A/B
-  foundation.
+- `02_dsc10_student_guide.txt` (distance 0.458) - explains early DSC habits that
+  later classes build on.
 
 Why relevant: the top DSC 100 chunks directly address prerequisites and the policy
 risk behind assuming an exception.
@@ -232,7 +232,7 @@ override a DSC 100 prerequisite." If you are still finishing DSC 40B or DSC 80, 
 should check the official prerequisite list and ask the department before depending
 on an exception.
 
-Sources: 04_dsc40a_40b_theory_foundations.txt, 06_dsc100_data_management.txt
+Sources: 02_dsc10_student_guide.txt, 06_dsc100_data_management.txt
 ```
 
 Out-of-scope question:
@@ -287,9 +287,9 @@ Results from the UCSD run:
 | # | Question | Expected answer | Retrieved chunks | Actual response | Judgment |
 |---|----------|-----------------|------------------|-----------------|----------|
 | 1 | How should I plan the UCSD DSC lower-division sequence? | Finish DSC 10, DSC 20, DSC 30, DSC 40A, DSC 40B, and DSC 80 on time because they unlock upper division; plan around prerequisites. | `12_ucsd_dsc_four_year_strategy.txt` 0.352, `03_dsc20_30_programming_sequence.txt` 0.397, `01_ucsd_dsc_major_catalog.txt` 0.397 | Said to build around prerequisites, finish DSC 10/20/30/40A/40B/80 on time, and avoid stacking too many heavy classes. | Accurate |
-| 2 | Is DSC 30 a heavy class, and how should I handle it? | Yes, it is a technical programming/data-structures class; do not overload the quarter, start assignments early, and build debugging/runtime habits. | `02_dsc10_student_guide.txt` 0.301, `07_dsc102_scalable_analytics.txt` 0.388, `03_dsc20_30_programming_sequence.txt` 0.431 | Said DSC 30 is challenging, exposes weak programming habits, and needs a solid DSC 20 foundation, but omitted start-early/debugging advice. | Partially accurate |
-| 3 | What should I know before taking DSC 80? | DSC 80 combines Python/dataframe work, cleaning, visualization, reasoning, and communication; review debugging and dataframe skills. | `05_dsc80_practice_application.txt` 0.323, `06_dsc100_data_management.txt` 0.368, `02_dsc10_student_guide.txt` 0.422 | Said DSC 80 pulls together the data science lifecycle and needs notebook/Jupyter/tabular-data comfort. | Accurate |
-| 4 | Can I assume an EASy request will let me take DSC 100 while still finishing a prerequisite? | No. Do not assume a prerequisite exception; check official prerequisites and ask the department before planning around it. | `06_dsc100_data_management.txt` 0.326, `06_dsc100_data_management.txt` 0.388, `04_dsc40a_40b_theory_foundations.txt` 0.457 | Said no, do not assume EASy will override the prerequisite; check official prerequisites and ask the department. | Accurate |
+| 2 | Is DSC 30 a heavy class, and how should I handle it? | Yes, it is a technical programming/data-structures class; do not overload the quarter, start assignments early, and build debugging/runtime habits. | `02_dsc10_student_guide.txt` 0.301, `07_dsc102_scalable_analytics.txt` 0.388, `03_dsc20_30_programming_sequence.txt` 0.427 | Said DSC 30 is challenging, exposes weak programming habits, and needs a solid DSC 20 foundation, but omitted start-early/debugging advice. | Partially accurate |
+| 3 | What should I know before taking DSC 80? | DSC 80 combines Python/dataframe work, cleaning, visualization, reasoning, and communication; review debugging and dataframe skills. | `05_dsc80_practice_application.txt` 0.323, `06_dsc100_data_management.txt` 0.368, `02_dsc10_student_guide.txt` 0.422 | Said DSC 80 bridges lower division into upper division, pulls together the data science lifecycle, and requires notebook-workflow comfort. | Accurate |
+| 4 | Can I assume an EASy request will let me take DSC 100 while still finishing a prerequisite? | No. Do not assume a prerequisite exception; check official prerequisites and ask the department before planning around it. | `06_dsc100_data_management.txt` 0.326, `06_dsc100_data_management.txt` 0.389, `02_dsc10_student_guide.txt` 0.458 | Said no, do not assume EASy will override the DSC 100 prerequisite. | Accurate |
 | 5 | How should I prepare for DSC 140A? | Review probability and linear algebra, especially if DSC 40A/40B were shaky; focus on model assumptions/objectives and avoid pairing with another math-heavy class. | `06_dsc100_data_management.txt` 0.428, `02_dsc10_student_guide.txt` 0.450, `05_dsc80_practice_application.txt` 0.452 | Refused: `I don't have enough information on that in my sources.` | Inaccurate |
 
 Overall: 3 accurate, 1 partially accurate, 1 inaccurate, plus a correct refusal for an
@@ -329,15 +329,15 @@ looked like general preparation advice.
 
 Instance 1 - corpus and chunking:
 
-I directed AI assistance to convert the project domain to UCSD Data Science and then
-revised the 12 source documents into source cards. I kept the official UCSD catalog
-facts concrete and rewrote the advice sections in my own planning-note style so the
-corpus reads like something I would actually use while planning quarters.
+I used Codex after choosing the UCSD Data Science domain myself. I asked it to help
+turn my source list and chunking plan into the initial document/chunking setup, then I
+rewrote the 12 documents as my own source cards. I kept the official catalog facts
+concrete and edited the advice sections so they read like notes I would actually use
+while planning quarters.
 
 Instance 2 - retrieval/generation/evaluation:
 
-I directed AI assistance to update `rag.py`, `app.py`, and `evaluate.py` for UCSD
-DSC questions. I reviewed actual evaluation output and kept an honest partial
-failure for DSC 140A instead of tuning the test set until every answer looked
-perfect. I also kept deterministic source-line replacement in `rag.py` so citations
-come from retrieved metadata, not from the model's formatting.
+I used Codex to wire the retrieval, Gradio interface, and evaluation harness together.
+I checked the actual outputs myself, kept the DSC 140A failure instead of hiding it,
+and added deterministic source-line replacement in `rag.py` after seeing that citation
+formatting should come from metadata rather than model wording.

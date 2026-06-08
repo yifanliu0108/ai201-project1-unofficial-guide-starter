@@ -1,5 +1,5 @@
 Source card: UCSD DSC course listings and student planning notes for DSC 40A/40B
-Representative URL: https://courses.ucsd.edu/courselist.aspx?name=DSC
+Source URL checked: https://courses.ucsd.edu/courselist.aspx?name=DSC
 Collected as: documents/04_dsc40a_40b_theory_foundations.txt
 
 === DSC 40A and DSC 40B - Theory Foundation Notes ===

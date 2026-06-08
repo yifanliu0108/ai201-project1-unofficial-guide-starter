@@ -1,5 +1,5 @@
 Source card: My UCSD data science planning notes compiled from the catalog, course listings, and r/UCSD advice
-Representative URLs: https://catalog.ucsd.edu/curric/DSC-ug.html, https://courses.ucsd.edu/courselist.aspx?name=DSC, https://www.reddit.com/r/UCSD/
+Source URLs checked: https://catalog.ucsd.edu/curric/DSC-ug.html, https://courses.ucsd.edu/courselist.aspx?name=DSC, https://www.reddit.com/r/UCSD/
 Collected as: documents/12_ucsd_dsc_four_year_strategy.txt
 
 === UCSD Data Science Four-Year / Transfer Planning Notes ===
